@@ -172,7 +172,35 @@ def create_pdf_paper():
     content.append(PageBreak())
     
     # Abstract
-    content.append(Paragraph("Zusammenfassung", styles['CustomSection']))
+    # content.append(Paragraph("Zusammenfassung", styles['CustomSection']))
+     # Vertikale Zentrierung für die Zusammenfassung
+    content.append(Spacer(1, 2.5*inch))
+    
+    # Überschrift "Zusammenfassung" größer und zentriert
+    custom_summary_title = ParagraphStyle(
+        name='CustomSummaryTitle',
+        parent=styles['Title'],
+        fontSize=22,
+        alignment=TA_CENTER,
+        textColor=colors.HexColor('#1a237e'),
+        spaceAfter=30
+    )
+    styles.add(custom_summary_title)
+    
+    content.append(Paragraph("Zusammenfassung", custom_summary_title))
+    content.append(Spacer(1, 0.3*inch))
+    
+    # Zusammenfassungstext mit besserem Abstand
+    custom_summary_text = ParagraphStyle(
+        name='CustomSummaryText',
+        parent=styles['Normal'],
+        fontSize=11,
+        alignment=TA_CENTER,
+        spaceBefore=8,
+        spaceAfter=8,
+        leading=14
+    )
+    styles.add(custom_summary_text)
     
     abstract_text = """
     Diese Studie analysiert die Entwicklung von Diebstahlsdelikten in Deutschland im Zeitraum 2014-2024 
@@ -187,16 +215,49 @@ def create_pdf_paper():
     deutet darauf hin, dass Bundesländer mit höheren Fallzahlen tendenziell niedrigere 
     Aufklärungsraten aufweisen.
     """
-    content.append(Paragraph(abstract_text, styles['CustomNormal']))
+    
+    content.append(Paragraph(abstract_text, custom_summary_text))
     content.append(Spacer(1, 0.3*inch))
+    
+    # content.append(Paragraph(abstract_text, styles['CustomNormal']))
+    # content.append(Spacer(1, 0.3*inch))
     
     # Keywords
     keywords = "Schlüsselwörter: Polizeiliche Kriminalstatistik, Diebstahlsdelikte, Aufklärungsquote, regionale Kriminalitätsanalyse, Deutschland"
     content.append(Paragraph(keywords, styles['CustomKeyword']))
     content.append(PageBreak())
     
+    # Inhaltsverzeichnis - Mittig positioniert
+    content.append(Spacer(1, 1.5*inch))
+    
+    # Überschrift "Inhaltsverzeichnis" größer und zentriert
+    custom_toc_title = ParagraphStyle(
+        name='CustomToCTitle',
+        parent=styles['Title'],
+        fontSize=20,
+        alignment=TA_CENTER,
+        textColor=colors.HexColor('#1a237e'),
+        spaceAfter=40
+    )
+    styles.add(custom_toc_title)
+    
+    content.append(Paragraph("Inhaltsverzeichnis", custom_toc_title))
+    content.append(Spacer(1, 0.5*inch))
+    
+    # TOC-Einträge mit größerer Schrift und besserem Abstand
+    custom_toc_item = ParagraphStyle(
+        name='CustomTocItem',
+        parent=styles['Normal'],
+        fontSize=14,
+        alignment=TA_CENTER,
+        spaceBefore=12,
+        spaceAfter=12,
+        leading=18
+    )
+    styles.add(custom_toc_item)
+    
     # Table of Contents (simplified)
-    content.append(Paragraph("Inhaltsverzeichnis", styles['CustomSection']))
+    # content.append(Paragraph("Inhaltsverzeichnis", styles['CustomSection']))
     toc_items = [
         "1. Einleitung",
         "2. Daten und Methoden",
@@ -205,10 +266,13 @@ def create_pdf_paper():
         "5. Schlussfolgerungen und Ausblick",
         "6. Literaturverzeichnis"
     ]
-    
+
     for item in toc_items:
-        content.append(Paragraph(item, styles['Normal']))
-        content.append(Spacer(1, 0.1*inch))
+        content.append(Paragraph(item, custom_toc_item))
+        content.append(Spacer(1, 0.15*inch))    
+    # for item in toc_items:
+    #     content.append(Paragraph(item, styles['Normal']))
+    #     content.append(Spacer(1, 0.1*inch))
     
     content.append(PageBreak())
     
@@ -277,8 +341,23 @@ def create_pdf_paper():
     content.append(Spacer(1, 0.3*inch))
     
     # 3. Ergebnisse
-    content.append(Paragraph("3. Ergebnisse", styles['CustomSection']))
+    content.append(PageBreak())
+     # Custom style für "3. Ergebnisse" mit größerer Schrift
+    custom_results_title = ParagraphStyle(
+        name='CustomResultsTitle',
+        parent=styles['Heading1'],
+        fontSize=18,
+        spaceBefore=20,
+        spaceAfter=15,
+        textColor=colors.HexColor('#283593'),
+        fontName='Helvetica-Bold',
+        alignment=TA_LEFT
+    )
+    styles.add(custom_results_title)
     
+    content.append(Paragraph("3. Ergebnisse", custom_results_title))
+    
+    # content.append(Paragraph("3. Ergebnisse", styles['CustomSection']))
     # 3.1 Zeitliche Entwicklung der Fallzahlen
     content.append(Paragraph("3.1 Zeitliche Entwicklung der Fallzahlen", styles['CustomSubsection']))
     
@@ -434,7 +513,22 @@ def create_pdf_paper():
     content.append(Spacer(1, 0.3*inch))
     
     # 6. Literaturverzeichnis
-    content.append(Paragraph("6. Literaturverzeichnis", styles['CustomSection']))
+    content.append(PageBreak())
+    # Custom style für "6. Literaturverzeichnis" mit größerer Schrift
+    custom_biblio_title = ParagraphStyle(
+        name='CustomBiblioTitle',
+        parent=styles['Heading1'],
+        fontSize=18,
+        spaceBefore=20,
+        spaceAfter=15,
+        textColor=colors.HexColor('#283593'),
+        fontName='Helvetica-Bold',
+        alignment=TA_CENTER
+    )
+    styles.add(custom_biblio_title)
+    
+    content.append(Paragraph("6. Literaturverzeichnis", custom_biblio_title))
+    # content.append(Paragraph("6. Literaturverzeichnis", styles['CustomSection']))
     
     literatur = [
         "[1] Bundeskriminalamt (2024). Polizeiliche Kriminalstatistik 2023. Wiesbaden: BKA.",
@@ -489,7 +583,7 @@ def main():
         print("3. Inhaltsverzeichnis")
         print("4. Einleitung mit Forschungsfragen")
         print("5. Daten und Methoden")
-        print("6. Ergebnisse mit vier Visualisierungen")
+        print("6. Ergebnisse mit VIER Visualisierungen")
         print("7. Diskussion der Ergebnisse")
         print("8. Schlussfolgerungen und Ausblick")
         print("9. Literaturverzeichnis")
