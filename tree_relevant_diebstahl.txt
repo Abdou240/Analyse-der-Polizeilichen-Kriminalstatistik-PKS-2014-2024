@@ -1,0 +1,6 @@
+Diebstahl insgesamt und zwar: (****00)
+├─ Diebstahl insgesamt von Kraftwagen einschl. unbefugte Ingebrauchnahme (***100)
+│  ├─ Einfacher Diebstahl von Kraftwagen einschl. unbefugte Ingebrauchnahme (3**100)
+│  └─ Schwerer Diebstahl von Kraftwagen (4**100)
+└─ **35*00 (**35*00)
+   └─ Wohnungseinbruchdiebstahl § 244 Abs. 1 Nr. 3 StGB darunter: (435*00)
