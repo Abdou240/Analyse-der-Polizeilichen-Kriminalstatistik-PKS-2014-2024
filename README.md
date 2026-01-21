@@ -35,7 +35,7 @@ Analyse-der-Polizeilichen-Kriminalstatistik-PKS-2014-2024-main/
 ├── improved_main.py
 ├── pks_analysis_finale_1.py
 ├── generate_graphs_and_presentation.py
-└── generate_paper.py 
+└── generate_paper.py
 
 ## Symlinks für Abwärtskompatibilität
 
