@@ -7,11 +7,13 @@ Dieses Projekt analysiert die polizeiliche Kriminalstatistik (PKS) des Bundes so
 Um Daten und Ausgaben übersichtlich zu halten, wurden die Dateien in Unterverzeichnisse einsortiert. Symbolische Links im Projekt-Root erhalten die ursprünglichen Dateinamen, sodass die Python-Skripte weiterhin funktionieren, ohne angepasst werden zu müssen.
 
 /Analyse-der-Polizeilichen-Kriminalstatistik-PKS-2014-2024-main/
+│
 ├── data_converted/               # Alle rohen Excel-Tabellen für 'improved_main.py' und 'pks_analysis_finale_1.py'
 │   ├── LA-F-02-T01-Laender-Faelle-HZ_xls.xlsx
 │   ├── LA-F-02-T01-Laender-Faelle-HZ_xls_2014.xlsx
 │   ├── ... (2015-2024)
 │   └── T01-ZR-Bund-Fälle_xls.xlsx
+│
 ├── data/
 │   └── processed/                # Bereinigte bzw. intermediäre Daten, die von den Skripten erzeugt werden
 │       ├── laender_relevant_cases_2012_2024.csv
@@ -20,23 +22,26 @@ Um Daten und Ausgaben übersichtlich zu halten, wurden die Dateien in Unterverze
 │       ├── time_series_clearance_clean_2014_2024.csv
 │       ├── tree_all_diebstahl.txt
 │       └── tree_relevant_diebstahl.txt
+│
 ├── figures/                      # Alle generierten Visualisierungen
 │   ├── figure1_cases.png
 │   ├── figure2_clearance.png
 │   ├── figure3_bar_states.png
 │   └── figure4_scatter_cases_clearance.png
+│
 ├── docs/                         # Dokumentationen und Präsentationen
 │   ├── PKS_Analysis_Paper_YYYYMMDD_HHMMSS.pdf
 │   ├── PKS_presentation_professional.pptx
 │   ├── Projektkonzept_PKS_abderrahmen.pdf
 │   └── Projektkonzept_PKS_abderrahmen.pptx
+│
 ├── LICENSE
 ├── README.md                     # Diese Datei
 ├── improved_main.py
 ├── pks_analysis_finale_1.py
 ├── generate_graphs_and_presentation.py
 └── generate_paper.py
-
+# (diverse Symlinks im Root-Verzeichnis, die auf Dateien in den oben genannten Unterordnern verweisen)
 
 ## Symlinks für Abwärtskompatibilität
 
