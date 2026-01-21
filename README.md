@@ -1,3 +1,10 @@
+# Analyse der Polizeilichen Kriminalstatistik (PKS) 2014-2024
+
+Dieses Projekt analysiert die polizeiliche Kriminalstatistik (PKS) des Bundes sowie der Länder für die Jahre 2014 bis 2024. Es umfasst Python-Skripte zum Einlesen, Bereinigen und Auswerten der Rohdaten (Excel-Dateien), zur Erstellung von Grafiken und Präsentationen sowie zur Generierung eines formatierten Berichts im PDF-Format.
+
+## Projektstruktur
+
+Um Daten und Ausgaben übersichtlich zu halten, wurden die Dateien in Unterverzeichnisse einsortiert. Symbolische Links im Projekt-Root erhalten die ursprünglichen Dateinamen, sodass die Python-Skripte weiterhin funktionieren, ohne angepasst werden zu müssen.
 
 ## Symlinks für Abwärtskompatibilität
 
