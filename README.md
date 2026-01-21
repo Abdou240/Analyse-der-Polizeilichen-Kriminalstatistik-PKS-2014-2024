@@ -44,7 +44,8 @@ Um Daten und Ausgaben übersichtlich zu halten, wurden die Dateien in Unterverze
 ├── 🐍 pks_analysis_finale_1.py            # Analyse-Logik
 ├── 🐍 generate_graphs_and_presentation.py # Visualisierungs-Modul
 └── 🐍 generate_paper.py                   # Modul zur Berichtserstellung
-```text
+```
+
 ## Symlinks für Abwärtskompatibilität
 
 Die Python-Skripte erwarten bestimmte Dateien im Projekt-Root. Damit sie unverändert weiterlaufen können, gibt es symbolische Links:
