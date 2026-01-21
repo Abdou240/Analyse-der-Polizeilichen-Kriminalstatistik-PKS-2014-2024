@@ -9,41 +9,42 @@ Um Daten und Ausgaben übersichtlich zu halten, wurden die Dateien in Unterverze
 ## Projektstruktur
 
 ```text
-Analyse-der-Polizeilichen-Kriminalstatistik-PKS-2014-2024-main/
-├── data_converted/                          # Alle rohen Excel-Tabellen
-│   ├── LA-F-02-T01-Laender-Faelle-HZ_xls.xlsx
-│   ├── LA-F-02-T01-Laender-Faelle-HZ_xls_2014.xlsx
-│   ├── ... (2015–2024)
-│   └── T01-ZR-Bund-Fälle_xls.xlsx
-│
-├── data/
-│   └── processed/                           # Bereinigte/intermediäre Daten
-│       ├── laender_relevant_cases_2012_2024.csv
-│       ├── laender_relevant_aq_2012_2024.csv
-│       ├── time_series_cases_clean_2014_2024.csv
-│       ├── time_series_clearance_clean_2014_2024.csv
-│       ├── tree_all_diebstahl.txt
-│       └── tree_relevant_diebstahl.txt
-│
-├── figures/                                 # Alle generierten Visualisierungen
-│   ├── figure1_cases.png
-│   ├── figure2_clearance.png
-│   ├── figure3_bar_states.png
-│   └── figure4_scatter_cases_clearance.png
-│
-├── docs/                                    # Dokumentationen und Präsentationen
-│   ├── PKS_Analysis_Paper_YYYYMMDD_HHMMSS.pdf
-│   ├── PKS_presentation_professional.pptx
-│   ├── Projektkonzept_PKS_abderrahmen.pdf
-│   └── Projektkonzept_PKS_abderrahmen.pptx
-│
-├── LICENSE
-├── README.md                                # Diese Datei
-├── improved_main.py
-├── pks_analysis_finale_1.py
-├── generate_graphs_and_presentation.py
-└── generate_paper.py
+### 📂 Projektstruktur
 
+```text
+/Analyse-der-Polizeilichen-Kriminalstatistik-PKS-2014-2024-main/
+│
+├── 📂 data_converted/                     # Rohdaten (Excel-Importe aus PKS)
+│   ├── 📊 LA-F-02-T01-Laender-Faelle-HZ_xls.xlsx
+│   ├── 📊 ... (Datensätze 2014–2024)
+│   └── 📊 T01-ZR-Bund-Fälle_xls.xlsx
+│
+├── 📂 data/
+│   └── 📂 processed/                      # Bereinigte Datensätze & Zeitreihen (Output)
+│       ├── 📑 laender_relevant_cases_2012_2024.csv
+│       ├── 📑 laender_relevant_aq_2012_2024.csv
+│       ├── 📑 time_series_cases_clean_2014_2024.csv
+│       ├── 📑 time_series_clearance_clean_2014_2024.csv
+│       └── 📄 tree_*.txt                  # Hierarchische Strukturdaten
+│
+├── 📂 figures/                            # Generierte Visualisierungen und Plots
+│   ├── 📉 figure1_cases.png
+│   ├── 📉 figure2_clearance.png
+│   ├── 📊 figure3_bar_states.png
+│   └── 📉 figure4_scatter_cases_clearance.png
+│
+├── 📂 docs/                               # Wissenschaftliche Ausarbeitung & Präsentation
+│   ├── 📕 PKS_Analysis_Paper_YYYYMMDD.pdf
+│   ├── 📽️ PKS_presentation_professional.pptx
+│   └── 📄 Projektkonzept_PKS_abderrahmen.pdf
+│
+├── 📜 LICENSE
+├── 📝 README.md                           # Projektübersicht
+├── 🐍 improved_main.py                    # Hauptskript zur Datenverarbeitung
+├── 🐍 pks_analysis_finale_1.py            # Analyse-Logik
+├── 🐍 generate_graphs_and_presentation.py # Visualisierungs-Modul
+└── 🐍 generate_paper.py                   # Modul zur Berichtserstellung
+```text
 ## Symlinks für Abwärtskompatibilität
 
 Die Python-Skripte erwarten bestimmte Dateien im Projekt-Root. Damit sie unverändert weiterlaufen können, gibt es symbolische Links:
