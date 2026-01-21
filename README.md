@@ -6,9 +6,6 @@ Dieses Projekt analysiert die polizeiliche Kriminalstatistik (PKS) des Bundes so
 
 Um Daten und Ausgaben übersichtlich zu halten, wurden die Dateien in Unterverzeichnisse einsortiert. Symbolische Links im Projekt-Root erhalten die ursprünglichen Dateinamen, sodass die Python-Skripte weiterhin funktionieren, ohne angepasst werden zu müssen.
 
-## Projektstruktur
-
-```text
 ### 📂 Projektstruktur
 
 ```text
