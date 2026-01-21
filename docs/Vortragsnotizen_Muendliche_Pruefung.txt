@@ -1,0 +1,137 @@
+# VORTRAGSNOTIZEN FÜR MÜNDLICHE PRÜFUNG: ANALYSE VON DIEBSTAHLSDELIKTEN
+
+## FOLIE 1: Titelfolie
+Sehr geehrte Prüfungskommission,
+
+ich präsentiere Ihnen heute eine empirische Analyse von Diebstahlsdelikten in Deutschland im Zeitraum 2014 bis 2024. Die Untersuchung basiert auf Daten der Polizeilichen Kriminalstatistik und kombiniert zeitliche mit regionalen Analysen.
+
+Ziel dieser Studie ist es, sowohl makrotrends als auch regionale Disparitäten zu identifizieren und daraus kriminalpolitische Implikationen abzuleiten.
+
+---
+
+## FOLIE 2: Forschungsfragen
+Die Analyse adressiert vier zentrale Forschungsfragen:
+
+Erstens: Wie haben sich die Fallzahlen von Diebstahlsdelikten im betrachteten Zeitraum entwickelt?
+
+Zweitens: Welche regionalen Unterschiede zeigen sich zwischen den Bundesländern?
+
+Drittens: Besteht ein systematischer Zusammenhang zwischen Fallzahlen und Aufklärungsquoten?
+
+Viertens: Welche Schlussfolgerungen ergeben sich für die Kriminalprävention und Strafverfolgung?
+
+---
+
+## FOLIE 3: Datenbasis und Deliktkategorien
+Unsere Untersuchung basiert auf der Polizeilichen Kriminalstatistik, der zentralen amtlichen Kriminalstatistik Deutschlands. Die PKS unterteilt Diebstahlsdelikte in ein komplexes Klassifikationssystem, das sogenannte "Tree"-System.
+
+In dieser Systematik wird "Diebstahl insgesamt" als Oberkategorie geführt, unter die zahlreiche Subkategorien fallen. Dazu zählen beispielsweise Diebstahl von Kraftfahrzeugen, Fahrraddiebstahl, Ladendiebstahl, Taschendiebstahl und Wohnungseinbruchdiebstahl.
+
+Jede Kategorie ist durch spezifische Tatbestandsmerkmale und Schweregrade definiert, was eine differenzierte Analyse ermöglicht.
+
+---
+
+## FOLIE 4: Fokussierte Deliktgruppen
+Aus dieser umfangreichen Systematik haben wir drei Deliktgruppen für eine vertiefte Analyse ausgewählt:
+
+Erstens: "Diebstahl insgesamt" als aggregierte Referenzgröße. Diese Kategorie dient als Basis für Gesamttrends.
+
+Zweitens: "Diebstahl von Kraftwagen einschließlich unbefugter Ingebrauchnahme". Diese Deliktgruppe ist aufgrund ihres Schadensausmaßes und ihrer sozialen Relevanz von besonderem Interesse.
+
+Drittens: "Wohnungseinbruchdiebstahl gemäß §244 Absatz 1 Nummer 3 StGB". Diese Form des Diebstahls weist besondere Ermittlungsanforderungen auf und hat erhebliche Auswirkungen auf das Sicherheitsempfinden der Bevölkerung.
+
+Diese Auswahl ermöglicht eine Balance zwischen Gesamtüberblick und spezifischer Deliktanalyse.
+
+---
+
+## FOLIE 5: Methodische Herangehensweise
+Methodisch kombiniert die Studie mehrere analytische Ansätze:
+
+Zeitreihenanalysen erfassen langfristige Trends der Fallzahlen und Aufklärungsquoten. Für unterschiedlich skalierte Delikte verwenden wir duale Achsendarstellungen.
+
+Regionale Analysen auf Bundeslandebene identifizieren räumliche Disparitäten. Hierfür vergleichen wir die Top-10 Bundesländer nach Fallzahlen.
+
+Korrelationsanalysen untersuchen Zusammenhänge zwischen Fallzahlen und Aufklärungsquoten. Lineare Regressionen quantifizieren diese Beziehungen.
+
+Alle Berechnungen wurden mit Python unter Verwendung wissenschaftlicher Bibliotheken durchgeführt.
+
+---
+
+## FOLIE 6: Entwicklung der Fallzahlen 2014-2024
+Die zeitliche Entwicklung zeigt einen konsistent rückläufigen Trend bei allen drei Deliktgruppen.
+
+"Diebstahl insgesamt" verzeichnet einen Rückgang von etwa 20 Prozent – von 2,44 Millionen Fällen im Jahr 2014 auf 1,94 Millionen Fälle im Jahr 2024.
+
+Besonders ausgeprägt ist der Rückgang beim Wohnungseinbruchdiebstahl mit einer Reduktion um etwa 48 Prozent.
+
+Auch der Kfz-Diebstahl zeigt einen kontinuierlichen Abwärtstrend, wenn auch mit geringerer Dynamik.
+
+Diese Entwicklung korrespondiert mit dem in der kriminologischen Literatur dokumentierten allgemeinen Kriminalitätsrückgang in Deutschland.
+
+---
+
+## FOLIE 7: Entwicklung der Aufklärungsquoten
+Bei den Aufklärungsquoten zeigen sich unterschiedliche Muster.
+
+Für "Diebstahl insgesamt" ist eine moderate Steigerung von 27,0 auf 31,4 Prozent zu verzeichnen.
+
+Beim Kfz-Diebstahl zeigen die Aufklärungsquoten stärkere Fluktuationen, mit einem aktuellen Wert von 29,2 Prozent im Jahr 2024.
+
+Besonders auffällig ist die persistente Niedrigaufklärungsquote beim Wohnungseinbruchdiebstahl. Mit 15,3 Prozent im Jahr 2024 bleibt diese Quote auf kritisch niedrigem Niveau.
+
+Dieser Befund deutet auf spezifische Ermittlungsherausforderungen bei dieser Deliktart hin.
+
+---
+
+## FOLIE 8: Regionale Unterschiede zwischen Bundesländern
+Die regionale Analyse offenbart signifikante Disparitäten zwischen den Bundesländern.
+
+Nordrhein-Westfalen verzeichnet mit über 523.000 Fällen die höchste absolute Fallzahl, gefolgt von Berlin mit etwa 223.000 Fällen.
+
+Die Verteilung folgt weitgehend, aber nicht ausschließlich, der Bevölkerungsgröße. Stadtstaaten wie Berlin und Hamburg zeigen überproportional hohe Fallzahlen relativ zu ihrer Einwohnerzahl.
+
+Diese regionalen Unterschiede reflektieren nicht nur demografische Faktoren, sondern auch strukturelle Unterschiede wie Urbanisierungsgrad, sozioökonomische Bedingungen und möglicherweise polizeiliche Ressourcenallokation.
+
+---
+
+## FOLIE 9: Zusammenhang Fallzahlen und Aufklärungsquoten
+Die korrelative Analyse zeigt einen negativen Zusammenhang zwischen Fallzahlen und Aufklärungsquoten auf Bundeslandebene.
+
+Die lineare Regression ergibt einen Korrelationskoeffizienten von r = -0,207 bei einem Bestimmtheitsmaß von R² = 0,043 für das Jahr 2024.
+
+Interpretation: Bundesländer mit höheren Fallzahlen tendieren zu niedrigeren Aufklärungsquoten. Dieser Effekt könnte auf Kapazitätsengpässe in der Strafverfolgung hinweisen.
+
+Berlin stellt einen bemerkenswerten Ausreißer dar: Trotz zweithöchster Fallzahl weist es eine überdurchschnittliche Aufklärungsquote auf, was auf spezifische strukturelle oder organisatorische Faktoren hindeuten könnte.
+
+---
+
+## FOLIE 10: Diskussion und Interpretation
+Die Ergebnisse lassen mehrere Schlussfolgerungen zu:
+
+Erstens bestätigen sie den allgemeinen Rückgang der Diebstahlskriminalität in Deutschland, der mit verbesserten Präventionsmaßnahmen, technologischen Sicherungsvorkehrungen und möglicherweise demografischen Veränderungen erklärt werden könnte.
+
+Zweitens offenbart die persistente Niedrigaufklärungsquote bei Wohnungseinbruchdiebstählen strukturelle Herausforderungen in der Ermittlungsarbeit, möglicherweise bedingt durch professionelle Täterstrukturen oder besondere Beweisanforderungen.
+
+Drittens zeigen die regionalen Disparitäten die Notwendigkeit differenzierter, regional angepasster Kriminalpolitik.
+
+Viertens deutet der negative Zusammenhang zwischen Fallzahlen und Aufklärungsquoten auf potenzielle Kapazitätsgrenzen in der Strafverfolgung hin.
+
+---
+
+## FOLIE 11: Zusammenfassung und Ausblick
+Zusammenfassend zeigt die Analyse:
+
+1. Einen kontinuierlichen Rückgang der Fallzahlen bei allen drei Deliktgruppen.
+2. Nur moderate Verbesserungen der Aufklärungsquoten, mit kritisch niedrigen Werten beim Wohnungseinbruchdiebstahl.
+3. Signifikante regionale Unterschiede zwischen den Bundesländern.
+4. Einen negativen Zusammenhang zwischen Fallzahlen und Aufklärungsquoten.
+
+Für die weitere Forschung empfehlen sich:
+- Multivariate Analysen mit sozioökonomischen Kontrollvariablen
+- Längsschnittstudien zur Untersuchung kausaler Zusammenhänge
+- Vertiefende Fallstudien zu regionalen Besonderheiten
+- Evaluation spezifischer Präventionsprogramme auf Länderebene
+
+Die Ergebnisse unterstreichen die Bedeutung einer evidenzbasierten, differenzierten Kriminalpolitik.
+
+Vielen Dank für Ihre Aufmerksamkeit. Ich stehe nun für Fragen zur Verfügung.
